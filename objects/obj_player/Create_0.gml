@@ -1,14 +1,19 @@
 ///@description
 
 #region variaveis
+var seg = global.fps
 vel = 2.5
 cd_tiro = 10
 segundos = 0
 
+
 vida = 3;
 escudo = 3;
-
+meu_escudo = noone
 lv_tiro = 1;
+tempo_invencivel = seg
+timer_invencivel = 0
+
 #endregion
 
 #region metodos
@@ -16,7 +21,7 @@ lv_tiro = 1;
 //metodo de controlar o player
 controla_player = function()
 {
-	
+	timer_invencivel--;
 	//teclas
 	var _up, _down, _left, _right, _shot;
 	_up		 = keyboard_check(ord("W")) || keyboard_check(vk_up);
@@ -124,6 +129,28 @@ desenha_icone = function(spr,qnts,xx = 25,yy)
 	
 		draw_sprite_ext(spr,0,_posx,yy,2,2,0,c_white,0.7)
 		_posx += 50
+	}
+}
+
+perde_vida = function()
+{	if(timer_invencivel > 0 ) return;
+	
+	if (vida > 1){
+		vida--;
+		timer_invencivel = tempo_invencivel
+	}
+	else
+	{
+		instance_destroy()
+	}
+}
+
+usa_escudo = function()
+{
+	if(escudo > 0 && !instance_exists(meu_escudo))
+	{
+		escudo--;	
+		meu_escudo = instance_create_layer(x,y,"escudo",obj_escudo)
 	}
 }
 #endregion
