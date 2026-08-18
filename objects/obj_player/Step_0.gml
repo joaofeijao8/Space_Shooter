@@ -1,10 +1,5 @@
 ///@description 
 
-//se sem vida, então morre
-if(vida <= 0) {
-	
-}
-
 //controle pra se movimentar
 controla_player();
 

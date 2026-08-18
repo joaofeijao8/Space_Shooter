@@ -78,7 +78,7 @@ controla_player = function()
 tiro_1 = function(cor) 
 {
 	
-	var _tiro = instance_create_layer(x,y,"tiro",obj_tiro)
+	var _tiro = instance_create_layer(x,y,"tiro_player",obj_tiro)
 		
 		_tiro.vspeed =-6
 		_tiro.image_blend = cor
@@ -87,11 +87,11 @@ tiro_1 = function(cor)
 tiro_2 = function(dif,cor)
 {
 	
-	var _tiro = instance_create_layer(x+dif,y,"tiro",obj_tiro)
+	var _tiro = instance_create_layer(x+dif,y,"tiro_player",obj_tiro)
 	_tiro.vspeed =-6
 	_tiro.image_blend = cor
 		
-	_tiro = instance_create_layer(x-dif,y,"tiro",obj_tiro)
+	_tiro = instance_create_layer(x-dif,y,"tiro_player",obj_tiro)
 	_tiro.vspeed =-6
 	_tiro.image_blend = cor
 }
@@ -105,7 +105,7 @@ tiro_3 = function(cor)
 
 tiro_4 = function(cor)
 {
-	var _tiro = instance_create_layer(x,y,"tiro",obj_tiro)
+	var _tiro = instance_create_layer(x,y,"tiro_player",obj_tiro)
 	_tiro.image_xscale = 2
 	_tiro.image_yscale = 2
 	_tiro.vspeed = -4
