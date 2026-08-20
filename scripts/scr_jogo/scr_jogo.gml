@@ -1,5 +1,8 @@
 global.debug = false
+global.rand = false
 global.fps = game_get_speed(gamespeed_fps)
+
+#region funçoes
 
 function explosao_inimigo (_escala,_cor = c_white,_x = x,_y = y)
 {
@@ -8,3 +11,7 @@ function explosao_inimigo (_escala,_cor = c_white,_x = x,_y = y)
 			image_yscale: _escala,
 			image_blend: _cor})
 }
+
+
+
+#endregion

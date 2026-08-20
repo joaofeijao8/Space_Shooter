@@ -1,4 +1,4 @@
-//@description atirar
+///@description atirar
 
 atirar()
 

@@ -1,6 +1,6 @@
-//@description
+///@description sumir se squenciado
 
-
+sumir()
 
 
 

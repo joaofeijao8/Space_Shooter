@@ -418,7 +418,7 @@
                                 {"th0":1.0,"th1":-1.0,"tv0":0.0,"tv1":0.0,"x":0.053,"y":-133.9556,},
                                 {"th0":-0.016,"th1":0.16800001,"tv0":0.0,"tv1":0.0,"x":0.122,"y":-120.17242,},
                                 {"th0":1.0,"th1":-1.0,"tv0":0.0,"tv1":0.0,"x":0.5463103,"y":-109.29024,},
-                                {"th0":-0.015999937,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":0.9999997,"y":-89.0,},
+                                {"th0":-0.015999937,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":-89.0,},
                               ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                           ],"function":1,"name":"Position","resourceType":"GMAnimCurve","resourceVersion":"2.0",},"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
                       "1":{"$RealKeyframe":"","AnimCurveId":null,"EmbeddedAnimCurve":{"$GMAnimCurve":"","%Name":"Position","channels":[
@@ -434,7 +434,7 @@
                                 {"th0":1.0,"th1":-1.0,"tv0":0.0,"tv1":0.0,"x":0.053,"y":-133.9556,},
                                 {"th0":-0.016,"th1":0.16800001,"tv0":0.0,"tv1":0.0,"x":0.122,"y":-120.17242,},
                                 {"th0":1.0,"th1":-1.0,"tv0":0.0,"tv1":0.0,"x":0.5463103,"y":-109.29024,},
-                                {"th0":-0.015999937,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":0.9999997,"y":-89.0,},
+                                {"th0":-0.015999937,"th1":0.0,"tv0":0.0,"tv1":0.0,"x":1.0,"y":-89.0,},
                               ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
                           ],"function":1,"name":"Position","resourceType":"GMAnimCurve","resourceVersion":"2.0",},"RealValue":0.0,"resourceType":"RealKeyframe","resourceVersion":"2.0",},
                     },"Disabled":false,"id":"a5629e83-f42a-4d0c-b680-aaca05018fac","IsCreationKey":false,"Key":11.0,"Length":300.0,"resourceType":"Keyframe<RealKeyframe>","resourceVersion":"2.0","Stretch":false,},
