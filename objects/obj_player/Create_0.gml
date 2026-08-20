@@ -42,6 +42,29 @@ controla_player = function()
 	y = clamp(y, sprite_height/2, room_height-sprite_height/2)
 	
 	//teclas apertadas
+	//diminuir lv da arma: 1 
+if (keyboard_check_pressed(ord("1")))
+{
+	lv_tiro--;
+	lv_tiro = clamp(lv_tiro,1,5)
+	
+}
+//aumentar lv da arma: 2 
+if (keyboard_check_pressed(ord("2"))) 
+{
+	lv_tiro++;
+	lv_tiro = clamp(lv_tiro,1,5)
+}
+//levar dano: enter
+if (keyboard_check_pressed(vk_enter))
+{
+	perde_vida()
+}
+//usar escudo
+if (keyboard_check_pressed(ord("E")))
+{
+	usa_escudo()
+}
 	//espaço pressionado
 	segundos++;
 	if (_shot && segundos >= cd_tiro){
@@ -54,17 +77,17 @@ controla_player = function()
 			
 			case 2: 
 				tiro_2(5,c_red)
-				cd_tiro = 15
+				cd_tiro = 13
 			break;
 			
 			case 3: 
 				tiro_3(c_blue)
-				cd_tiro = 20
+				cd_tiro = 16
 			break; 
 			
 			case 4: 
 				tiro_4(c_orange)
-				cd_tiro = 25
+				cd_tiro = 20
 			break;
 		}
 		
@@ -110,6 +133,7 @@ tiro_4 = function(cor)
 	_tiro.image_yscale = 2
 	_tiro.vspeed = -4
 	_tiro.image_blend = cor
+	_tiro.dano = 5
 }
 
 lvl_up = function()
@@ -132,25 +156,33 @@ desenha_icone = function(spr,qnts,xx = 25,yy)
 	}
 }
 
-perde_vida = function()
-{	if(timer_invencivel > 0 ) return;
-	
-	if (vida > 1){
-		vida--;
-		timer_invencivel = tempo_invencivel
-	}
-	else
-	{
-		instance_destroy()
-	}
-}
-
 usa_escudo = function()
 {
 	if(escudo > 0 && !instance_exists(meu_escudo))
 	{
 		escudo--;	
 		meu_escudo = instance_create_layer(x,y,"escudo",obj_escudo)
+	}
+}
+
+perde_vida = function()
+{	
+	// se eu estiver invencivel, saia do codigo
+	if(timer_invencivel > 0 ) return;
+	
+	//se eu tiver algum escudo
+	if (meu_escudo != noone)
+	{
+		meu_escudo.hitado++;
+	}
+	// se eu ainda tiver vida, tire minha vida e me deixe invencivel
+	else if (vida > 1){
+		vida--;
+		timer_invencivel = tempo_invencivel
+	}
+	else
+	{
+		instance_destroy()
 	}
 }
 #endregion

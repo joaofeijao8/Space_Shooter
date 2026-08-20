@@ -1,0 +1,3 @@
+//@description
+ 
+dano = 1

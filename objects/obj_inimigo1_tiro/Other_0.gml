@@ -1,8 +1,5 @@
-//@description
+//@description me destruir
 
-
-
-
-instance_destroy();
+instance_destroy(id,0);
 
  
