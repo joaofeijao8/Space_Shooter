@@ -26,7 +26,7 @@
   ],
   "name":"spr_tiro",
   "nineSlice":null,
-  "origin":4,
+  "origin":9,
   "parent":{
     "name":"player",
     "path":"folders/Sprites/player.yy",
@@ -88,7 +88,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":3,
-    "yorigin":8,
+    "yorigin":7,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

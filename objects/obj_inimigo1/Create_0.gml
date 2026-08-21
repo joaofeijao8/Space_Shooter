@@ -44,6 +44,6 @@ sumir = function()
 {
 	if (!global.rand && in_sequence != sequenciado)
 	{
-		instance_destroy()
+		instance_destroy(id,0)
 	}
 }

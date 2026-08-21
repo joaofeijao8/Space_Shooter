@@ -104,7 +104,7 @@ tiro_1 = function(cor)
 	var _tiro = instance_create_layer(x,y,"tiro_player",obj_tiro)
 		
 		_tiro.vspeed =-6
-		_tiro.image_blend = cor
+		_tiro.sombra = cor
 }
 
 tiro_2 = function(dif,cor)
@@ -112,11 +112,11 @@ tiro_2 = function(dif,cor)
 	
 	var _tiro = instance_create_layer(x+dif,y,"tiro_player",obj_tiro)
 	_tiro.vspeed =-6
-	_tiro.image_blend = cor
+	_tiro.sombra = cor
 		
 	_tiro = instance_create_layer(x-dif,y,"tiro_player",obj_tiro)
 	_tiro.vspeed =-6
-	_tiro.image_blend = cor
+	_tiro.sombra = cor
 }
 
 tiro_3 = function(cor)
@@ -132,8 +132,9 @@ tiro_4 = function(cor)
 	_tiro.image_xscale = 2
 	_tiro.image_yscale = 2
 	_tiro.vspeed = -4
-	_tiro.image_blend = cor
+	_tiro.sombra = cor
 	_tiro.dano = 5
+	
 }
 
 lvl_up = function()
@@ -174,15 +175,18 @@ perde_vida = function()
 	if (meu_escudo != noone)
 	{
 		meu_escudo.hitado++;
+		tremer(5)
 	}
 	// se eu ainda tiver vida, tire minha vida e me deixe invencivel
 	else if (vida > 1){
 		vida--;
 		timer_invencivel = tempo_invencivel
+		tremer(20)
 	}
 	else
 	{
 		instance_destroy()
+		tremer(50)
 	}
 }
 #endregion

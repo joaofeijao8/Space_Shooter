@@ -12,6 +12,18 @@ function explosao_inimigo (_escala,_cor = c_white,_x = x,_y = y)
 			image_blend: _cor})
 }
 
-
+function tremer (_quanto = 1)
+{
+	if(instance_exists(obj_screenshake))
+	{
+		with(obj_screenshake)
+		{
+			if (treme < _quanto)
+			{
+				treme = _quanto
+			}
+		}
+	}
+}
 
 #endregion
