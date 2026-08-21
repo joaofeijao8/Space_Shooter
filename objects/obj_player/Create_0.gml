@@ -5,7 +5,9 @@ var seg = global.fps
 vel = 2.5
 cd_tiro = 10
 segundos = 0
-
+yscale = 1
+xscale = 1
+pisca = false
 
 vida = 3;
 escudo = 3;
@@ -42,26 +44,31 @@ controla_player = function()
 	y = clamp(y, sprite_height/2, room_height-sprite_height/2)
 	
 	//teclas apertadas
+	//mostrar lv da arma: tab
+	if(keyboard_check_pressed(vk_tab))
+{
+	global.debug = !global.debug
+}
 	//diminuir lv da arma: 1 
-if (keyboard_check_pressed(ord("1")))
+	if (keyboard_check_pressed(ord("1")))
 {
 	lv_tiro--;
 	lv_tiro = clamp(lv_tiro,1,5)
 	
 }
-//aumentar lv da arma: 2 
-if (keyboard_check_pressed(ord("2"))) 
+	//aumentar lv da arma: 2 
+	if (keyboard_check_pressed(ord("2"))) 
 {
 	lv_tiro++;
 	lv_tiro = clamp(lv_tiro,1,5)
 }
-//levar dano: enter
-if (keyboard_check_pressed(vk_enter))
+	//levar dano: enter
+	if (keyboard_check_pressed(vk_enter))
 {
 	perde_vida()
 }
-//usar escudo
-if (keyboard_check_pressed(ord("E")))
+	//usar escudo
+	if (keyboard_check_pressed(ord("E")))
 {
 	usa_escudo()
 }
@@ -179,6 +186,9 @@ perde_vida = function()
 	}
 	// se eu ainda tiver vida, tire minha vida e me deixe invencivel
 	else if (vida > 1){
+		boing_in(2.3,0.4)
+		pisca = true
+		alarm[0] = 5
 		vida--;
 		timer_invencivel = tempo_invencivel
 		tremer(20)
@@ -189,4 +199,6 @@ perde_vida = function()
 		tremer(50)
 	}
 }
+
+
 #endregion

@@ -3,7 +3,7 @@
 //controle pra se movimentar
 controla_player();
 
-
+boing_out()
 
 //botar escudo na minha posição
 if (instance_exists(meu_escudo))
@@ -22,5 +22,3 @@ else
 	image_alpha = 1	
 }
 	
-//mostrar lv da arma: tab
-if(keyboard_check_pressed(vk_tab)) global.debug = !global.debug

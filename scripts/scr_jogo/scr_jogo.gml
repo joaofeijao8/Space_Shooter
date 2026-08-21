@@ -26,4 +26,50 @@ function tremer (_quanto = 1)
 	}
 }
 
+function boing_in(_xx = 2,_yy = 0.7)
+{
+	xscale = _xx
+	yscale = _yy
+}
+
+function boing_out()
+{
+	if(yscale < 0.95)
+	{
+		yscale = lerp(yscale, 1, 0.1)	
+	}
+	else
+	{
+		yscale = 1
+	}
+	if(xscale > 1.1)
+	{
+		xscale = lerp(xscale, 1, 0.1)	
+	}
+	else
+	{
+		xscale = 1
+	}
+}	
+
+function me_desenhe()
+{
+	if(!variable_instance_exists(id,"yscale")) yscale = image_yscale
+	if(!variable_instance_exists(id,"xscale")) xscale = image_xscale
+	draw_sprite_ext(sprite_index,image_index,x,y,xscale,yscale,image_angle,image_blend,image_alpha)	
+}
+
+function piscar()
+{
+	if (piscando)
+	{
+		gpu_set_blendmode(bm_add)
+		repeat(3)
+		{
+			draw_sprite_ext(sprite_index,image_index,x,y,xscale,yscale,image_angle,image_blend,image_alpha)	
+		}
+		gpu_set_blendmode(bm_normal)
+	}	
+}
+
 #endregion

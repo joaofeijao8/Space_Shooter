@@ -1,6 +1,7 @@
 ///@description
+ me_desenhe()
  
- draw_self()
+piscar()
  
 if (global.debug)
 {

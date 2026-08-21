@@ -1,5 +1,7 @@
 //@description
-
+piscando = false
+yscale = 1
+xscale = 1
 sequenciado = in_sequence
 segundos_carregar = 0;
 estado = "chegando"
@@ -109,24 +111,27 @@ maquina_de_estados = function()
 }
 	 
 	toma_dano = function(_dano)
-{
-	vida -= _dano;
-	if (vida <= 0)
 	{
-		morte()	
+		boing_in(1.5,0.8)
+		vida -= _dano;
+		if (vida <= 0)
+		{
+			morte()	
+		}
+		else
+		{
+			piscando = true
+			alarm[1] = 5
+		}
 	}
-	else
+		//caso eu tenha sido sequenciado apenas
+		sumir = function()
 	{
-		image_blend = c_blue
-		alarm[1] = 5
+		if (!global.rand && in_sequence != sequenciado)
+		{
+			instance_destroy(id,0)
+		}
 	}
-}
-	//caso eu tenha sido sequenciado apenas
-	sumir = function()
-{
-	if (!global.rand && in_sequence != sequenciado)
-	{
-		instance_destroy(id,0)
-	}
-}
+	
+	
 #endregion
