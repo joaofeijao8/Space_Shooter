@@ -72,4 +72,23 @@ function piscar()
 	}	
 }
 
+function musica()
+{
+	if (!instance_exists(obj_musicas)) instance_create_layer(0,0,"jogo",obj_musicas)	
+}
+
+function som (_som,_loop = 0,_pitch = 0,_pararSomIgual = 0)
+{
+	if (_pararSomIgual) audio_stop_sound(_som)
+	if (!_pitch)
+	{
+		var _pit = 1
+	}
+	else
+	{
+		_pit = random_range(0.8,1.2)	
+	}
+	audio_play_sound(_som,0,_loop, , ,_pit)	
+}
+
 #endregion

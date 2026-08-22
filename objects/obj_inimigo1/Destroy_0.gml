@@ -7,3 +7,4 @@ if(_chance >= 90)
 }
 
 tremer(2)
+som(snd_boom)

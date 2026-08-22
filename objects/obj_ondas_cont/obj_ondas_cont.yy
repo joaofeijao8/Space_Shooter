@@ -10,8 +10,8 @@
   "name":"obj_ondas_cont",
   "overriddenProperties":[],
   "parent":{
-    "name":"Inimigo",
-    "path":"folders/Objects/Inimigo.yy",
+    "name":"Jogo",
+    "path":"folders/Objects/Jogo.yy",
   },
   "parentObjectId":null,
   "persistent":false,

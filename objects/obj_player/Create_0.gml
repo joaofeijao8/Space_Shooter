@@ -103,7 +103,10 @@ controla_player = function()
 }
 
 
-
+som_tiro = function()
+{
+	//choose(som(snd_tiro_player,0,1,1),som(snd_tiro_player2,0,1,1))	
+}
 //metodo do tiro 1
 tiro_1 = function(cor) 
 {
@@ -112,6 +115,7 @@ tiro_1 = function(cor)
 		
 		_tiro.vspeed =-6
 		_tiro.sombra = cor
+		som(snd_tiro_player,0,1,1)
 }
 
 tiro_2 = function(dif,cor)
@@ -124,6 +128,7 @@ tiro_2 = function(dif,cor)
 	_tiro = instance_create_layer(x-dif,y,"tiro_player",obj_tiro)
 	_tiro.vspeed =-6
 	_tiro.sombra = cor
+	som(snd_tiro_player2,0,1,1)
 }
 
 tiro_3 = function(cor)
@@ -131,6 +136,7 @@ tiro_3 = function(cor)
 		
 	tiro_1(cor)
 	tiro_2(7,cor)
+	
 }
 
 tiro_4 = function(cor)
