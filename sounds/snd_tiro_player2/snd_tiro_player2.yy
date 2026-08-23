@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.113265306,
+  "duration":0.6531973,
   "exportDir":"",
   "name":"snd_tiro_player2",
   "parent":{

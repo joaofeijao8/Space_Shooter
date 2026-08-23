@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_musica_2",
+  "%Name":"snd_tiro_player3",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":238.86368,
+  "duration":1.0250794,
   "exportDir":"",
-  "name":"snd_musica_2",
+  "name":"snd_tiro_player3",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_musica_2.mp3",
-  "volume":0.2,
+  "soundFile":"snd_tiro_player3.wav",
+  "volume":1.0,
 }

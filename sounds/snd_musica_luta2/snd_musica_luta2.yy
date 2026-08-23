@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_musica_1",
+  "%Name":"snd_musica_luta2",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,9 +10,9 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":169.76979,
+  "duration":238.86368,
   "exportDir":"",
-  "name":"snd_musica_1",
+  "name":"snd_musica_luta2",
   "parent":{
     "name":"Sounds",
     "path":"folders/Sounds.yy",
@@ -21,6 +21,6 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_musica_1.mp3",
+  "soundFile":"snd_musica_luta2.mp3",
   "volume":0.2,
 }

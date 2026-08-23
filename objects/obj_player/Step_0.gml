@@ -1,7 +1,10 @@
 ///@description 
 
 //controle pra se movimentar
-controla_player();
+if(!global.transicao)
+{
+	controla_player();
+}
 
 boing_out()
 

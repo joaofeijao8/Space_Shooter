@@ -10,7 +10,7 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":0.11900227,
+  "duration":0.15585034,
   "exportDir":"",
   "name":"snd_tiro_player",
   "parent":{
@@ -22,5 +22,5 @@
   "resourceVersion":"2.0",
   "sampleRate":44100,
   "soundFile":"snd_tiro_player.wav",
-  "volume":0.49,
+  "volume":1.0,
 }

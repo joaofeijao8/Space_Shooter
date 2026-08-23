@@ -1,6 +1,8 @@
 global.debug = false
 global.rand = false
 global.fps = game_get_speed(gamespeed_fps)
+global.destino = rm_inicio
+global.transicao = false
 
 #region funçoes
 
@@ -77,7 +79,7 @@ function musica()
 	if (!instance_exists(obj_musicas)) instance_create_layer(0,0,"jogo",obj_musicas)	
 }
 
-function som (_som,_loop = 0,_pitch = 0,_pararSomIgual = 0)
+function som (_som,_loop = 0,_pitch = 0,_pararSomIgual = 0,_qntPitch = 0.2)
 {
 	if (_pararSomIgual) audio_stop_sound(_som)
 	if (!_pitch)
@@ -86,9 +88,26 @@ function som (_som,_loop = 0,_pitch = 0,_pararSomIgual = 0)
 	}
 	else
 	{
-		_pit = random_range(0.8,1.2)	
+		_pit = random_range(1-_qntPitch,1+_qntPitch)	
 	}
 	audio_play_sound(_som,0,_loop, , ,_pit)	
 }
+
+function muda_mapa()
+{
+	
+	room_goto(global.destino)
+}
+
+function transOn()
+{
+	global.transicao = true	
+}
+
+function transOff()
+{
+	global.transicao = false	
+}
+
 
 #endregion

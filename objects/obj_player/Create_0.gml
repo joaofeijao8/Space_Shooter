@@ -103,10 +103,7 @@ controla_player = function()
 }
 
 
-som_tiro = function()
-{
-	//choose(som(snd_tiro_player,0,1,1),som(snd_tiro_player2,0,1,1))	
-}
+
 //metodo do tiro 1
 tiro_1 = function(cor) 
 {
@@ -147,6 +144,7 @@ tiro_4 = function(cor)
 	_tiro.vspeed = -4
 	_tiro.sombra = cor
 	_tiro.dano = 5
+	som(snd_tiro_player3,0,1,1)
 	
 }
 
@@ -208,3 +206,6 @@ perde_vida = function()
 
 
 #endregion
+
+layer_sequence_create("transicao",x,y,sq_trasicao2)
+global.destino = rm_inicio
