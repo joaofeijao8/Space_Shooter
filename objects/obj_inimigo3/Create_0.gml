@@ -61,7 +61,7 @@ maquina_de_estados = function()
 			
 		case "carregando":
 			segundos_carregar++;
-			var _tempo_carregar = global.fps * 1
+			var _tempo_carregar = global.segundos * 1
 			if (segundos_carregar >= _tempo_carregar)
 			{
 				if (ataques >= 4)

@@ -2,7 +2,7 @@
 
 atirar()
 
-alarm[0] = global.fps * random_range(1,2)
+alarm[0] = global.segundos * random_range(1,2)
 
 
 

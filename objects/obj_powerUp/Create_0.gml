@@ -1,5 +1,5 @@
 ///@description
-alarm[0] = global.fps * 7
+alarm[0] = global.segundos * 7
 image_alpha = 1
 piscando = false
 sumindo = true

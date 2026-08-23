@@ -1,4 +1,6 @@
 ///@description
 
- 
-controla_menu()
+if (!global.transicao)
+{
+	controla_menu()
+}

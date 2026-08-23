@@ -20,5 +20,5 @@ switch(room)
 	
 }
 
-msc = audio_play_sound(msc_atual,0,1,1)
+msc = audio_play_sound(msc_atual,0,1,0.2)
 //aumenta_volume()

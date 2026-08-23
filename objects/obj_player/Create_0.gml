@@ -1,7 +1,7 @@
 ///@description
 
 #region variaveis
-var seg = global.fps
+var seg = global.segundos
 vel = 2.5
 cd_tiro = 10
 segundos = 0
