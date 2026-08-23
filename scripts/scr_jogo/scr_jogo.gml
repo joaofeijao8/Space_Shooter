@@ -5,6 +5,7 @@ global.destino = rm_inicio
 global.transicao = false
 global.fases_desbloqueadas = 0
 global.dificuldade = 0
+global.boss = 0 //se esta na luta do boss
 
 #region funçoes
 

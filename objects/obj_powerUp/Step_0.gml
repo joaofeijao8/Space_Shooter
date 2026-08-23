@@ -1,23 +1,7 @@
 ///@description
+show_debug_message(yy)
+show_debug_message(y)
+show_debug_message("aaaaaaaaaaa")
+sumirei()
 
-if (piscando)
-{
-	if (sumindo)
-	{
-		pisca_some()	
-	}
-	else
-	{
-		pisca_aparece()	
-	}
-	
-}
-
-if (image_alpha == 1)
-{
-	sumindo = true	
-}
-else if (image_alpha < 0.1)
-{
-	sumindo = false
-}
+flutuar()

@@ -29,7 +29,7 @@ pra_tras = function()
 }
 pra_frente = function()
 {
-	tween(id,"modi",0,tween_animation.quint_out,70)	
+	tween(id,"modi",0,tween_animation.quint_out,60)	
 }
 
 pro_jogo = function(_dificuldade = 1)

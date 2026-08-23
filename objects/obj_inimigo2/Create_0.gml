@@ -68,4 +68,4 @@ sumir = function()
 drop = function(_drop)
 {
 	instance_create_layer(x,y,"PowerUp",_drop)
-}
+}	

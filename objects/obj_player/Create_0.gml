@@ -10,7 +10,9 @@ xscale = 1
 pisca = false
 
 vida = 3;
-escudo = 3;
+if (room == rm_tutoriala) vida = 2
+escudo = 1;
+if (global.dificuldade == 2) escudo = 0
 meu_escudo = noone
 lv_tiro = 1;
 tempo_invencivel = seg
@@ -181,6 +183,13 @@ usa_escudo = function()
 		meu_escudo = instance_create_layer(x,y,"escudo",obj_escudo)
 	}
 }
+ganha_escudo = function()
+{
+	if (escudo <= 2)
+	{
+		escudo++	
+	}
+}
 
 perde_vida = function()
 {	
@@ -206,6 +215,13 @@ perde_vida = function()
 	{
 		instance_destroy()
 		tremer(50)
+	}
+}
+ganha_vida = function()
+{
+	if (vida <= 2)
+	{
+		vida++	
 	}
 }
 

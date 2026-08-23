@@ -1,9 +1,15 @@
 ///@description drops
  var _chance = random(100)
  
-if(_chance >= 85)
+if(_chance <= 10)
 {
-	instance_create_layer(x,y,"PowerUp",obj_powerUp)	
+	_chance = random(100)
+	if(_chance > 90)
+		drop(obj_powerUp)
+	else if (_chance >= 45)
+		drop(obj_bonus_escudo)
+	else
+		drop(obj_bonus_vida)
 }
 
 tremer(2)
