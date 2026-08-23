@@ -44,6 +44,11 @@ controla_player = function()
 	y = clamp(y, sprite_height/2, room_height-sprite_height/2)
 	
 	//teclas apertadas
+	if (keyboard_check_pressed(ord("R")) || keyboard_check_pressed(vk_enter))
+	{
+		layer_sequence_create("transicao",x,y,sq_trasicao1)
+		global.destino = room	
+	}
 	//mostrar lv da arma: tab
 	if(keyboard_check_pressed(vk_tab))
 {
@@ -63,12 +68,12 @@ controla_player = function()
 	lv_tiro = clamp(lv_tiro,1,5)
 }
 	//levar dano: enter
-	if (keyboard_check_pressed(vk_enter))
-{
-	perde_vida()
-}
+	//if (keyboard_check_pressed(vk_enter))
+	//{
+	//	perde_vida()
+	//}
 	//usar escudo
-	if (keyboard_check_pressed(ord("E")))
+	if (keyboard_check_pressed(ord("E")) || mouse_check_button_pressed(mb_right))
 {
 	usa_escudo()
 }
@@ -157,14 +162,14 @@ lvl_up = function()
 	
 }
 
-desenha_icone = function(spr,qnts,xx = 25,yy)
+desenha_icone = function(spr,qnts,posx = 25,posy,escala = 1.5,espacamento = 40)
 {
 	
-	var _posx = xx
+	var _posx = posx
 	repeat(qnts){
 	
-		draw_sprite_ext(spr,0,_posx,yy,2,2,0,c_white,0.7)
-		_posx += 50
+		draw_sprite_ext(spr,0,_posx,posy,escala,escala,0,c_white,0.7)
+		_posx += espacamento
 	}
 }
 

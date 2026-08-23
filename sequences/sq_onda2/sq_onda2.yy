@@ -26,8 +26,8 @@
   },
   "name":"sq_onda2",
   "parent":{
-    "name":"ondas",
-    "path":"folders/Sequences/ondas.yy",
+    "name":"fase 1",
+    "path":"folders/Sequences/ondas/fase 1.yy",
   },
   "playback":1,
   "playbackSpeed":60.0,

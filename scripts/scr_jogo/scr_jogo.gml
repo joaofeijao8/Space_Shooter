@@ -3,6 +3,7 @@ global.rand = false
 global.fps = game_get_speed(gamespeed_fps)
 global.destino = rm_inicio
 global.transicao = false
+global.fases_desbloqueadas = 0
 
 #region funçoes
 
