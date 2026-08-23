@@ -3,13 +3,21 @@
 menu = ["Jog]r", "Tutori]l", "S]ir"]
 menu_fases = ["f]se 1","f]se 2","f]se 3"]
 //qual menu esta selecionado agora
-menu_atual = menu_fases
+menu_atual = menu
 
 //posso mexer nos botoes do menu?
 controle = true
+//posso desenhar o menu?
+if (!global.transicao)
+	posso_desenhar = true
+else
+	posso_desenhar = false
+	
+//terminei a animação de entrada
+terminei = false
 
 //sairem da room com efeito
-modi = 0
+modi = -700
 //qual botão esta selecionado
 atual = 0
 //fazer o botão selecionado ir pra frente
@@ -18,6 +26,10 @@ margem = 20
 pra_tras = function()
 {
 	tween(id,"modi",-700,tween_animation.back_in,20)	
+}
+pra_frente = function()
+{
+	tween(id,"modi",0,tween_animation.quint_out,70)	
 }
 
 pro_jogo = function(_dificuldade = 1)

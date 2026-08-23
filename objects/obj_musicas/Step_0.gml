@@ -1,5 +1,4 @@
 ///@description
-show_debug_message(audio_sound_get_gain(msc))
 
 if(!global.transicao)
 {

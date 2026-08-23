@@ -1,6 +1,15 @@
 ///@description
 
+if(!terminei && modi == 0)
+{
+		terminei = true
+}
+
 if (!global.transicao)
 {
-	controla_menu()
+	posso_desenhar = true
+	if(terminei)
+	{
+		controla_menu()
+	}
 }
