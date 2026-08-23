@@ -1,17 +1,18 @@
 {
   "$GMObject":"",
-  "%Name":"obj_tutorial",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_inimigo2_tiro2",
+  "eventList":[],
   "managed":true,
-  "name":"obj_tutorial",
+  "name":"obj_inimigo2_tiro2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Jogo",
-    "path":"folders/Objects/Jogo.yy",
+    "name":"Inimigo",
+    "path":"folders/Objects/Inimigo.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_inimigo1_tiro",
+    "path":"objects/obj_inimigo1_tiro/obj_inimigo1_tiro.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -29,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_inimigo2_tiro2",
+    "path":"sprites/spr_inimigo2_tiro2/spr_inimigo2_tiro2.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

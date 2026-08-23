@@ -1,6 +1,6 @@
 {
   "$GMSequence":"v1",
-  "%Name":"sq_onda1",
+  "%Name":"sq_onda3",
   "autoRecord":true,
   "backdropHeight":512,
   "backdropImageOpacity":0.62,
@@ -24,7 +24,7 @@
     "resourceType":"KeyframeStore<MomentsEventKeyframe>",
     "resourceVersion":"2.0",
   },
-  "name":"sq_onda1",
+  "name":"sq_onda3",
   "parent":{
     "name":"fase 1",
     "path":"folders/Sequences/ondas/fase 1.yy",

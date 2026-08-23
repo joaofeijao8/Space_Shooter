@@ -1,6 +1,6 @@
 //@description
 
-if (next == false && !instance_exists(obj_inimigo1) && !instance_exists(obj_inimigo2) && !instance_exists(obj_inimigo3))
+if (next == false && !instance_exists(obj_inimigo1) && !instance_exists(obj_inimigo3) && !instance_exists(obj_inimigo2))
 {
 	alarm[0] = 150
 	next = true

@@ -1,8 +1,5 @@
-///@description sumir se squenciado
-
-sumir()
+///@description
+ 
+maquina_de_estados();
 
 boing_out()
-
-
- 

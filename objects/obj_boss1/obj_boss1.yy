@@ -1,15 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_tutorial",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"obj_boss1",
+  "eventList":[],
   "managed":true,
-  "name":"obj_tutorial",
+  "name":"obj_boss1",
   "overriddenProperties":[],
   "parent":{
-    "name":"Jogo",
-    "path":"folders/Objects/Jogo.yy",
+    "name":"Bosses",
+    "path":"folders/Objects/Inimigo/Bosses.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,7 +27,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_inimigo2",
+    "path":"sprites/spr_inimigo2/spr_inimigo2.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

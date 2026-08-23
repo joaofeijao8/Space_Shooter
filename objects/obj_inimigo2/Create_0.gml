@@ -1,71 +1,137 @@
 //@description
-
-sequenciado = in_sequence
 piscando = false
-pisca = noone
-vida = 3
-xscale = 1
 yscale = 1
+xscale = 1
+sequenciado = in_sequence
+segundos_carregar = 0;
+estado = "chegando"
+vida = 35
+ataques = 0
 
 atirar = function()
 {
-	var _tiro = instance_create_layer(x,y,"tiro_inimigo",obj_inimigo1_tiro)
-	_tiro.vspeed = 3
+	if(instance_exists(obj_player))
+	{
+		
+		var _p = obj_player
+		var _direcao = point_direction(x,y,_p.x,_p.y)
+		
+		var _tiro = instance_create_layer(x,y,"tiro_inimigo",obj_inimigo2_tiro)
+		
+		_tiro.speed = 2 
+		_tiro.direction = _direcao
+		_tiro.image_angle = _direcao + 90
+	}
+}	
+
+atirar2 = function()
+{
+	if(instance_exists(obj_player))
+	{
+		
+		var _ang = -20
+		repeat(3)
+		{
+			var _tiro = instance_create_layer(x,y,"tiro_inimigo",obj_inimigo2_tiro2)
+			_tiro.vspeed = 5
+			_tiro.direction = 270 + _ang
+			_tiro.image_angle =  _tiro.direction + 90
+			_ang += 20
+		}
+	}
 }
 
-alarm[0] = global.segundos * random_range(1,2)
+maquina_de_estados = function()
+{
+	
+	
+	switch(estado)
+	{
+		case "chegando":
+				if (y < 160)
+				{
+					vspeed = 2
+				}
+				else
+				{
+					vspeed = 0
+					estado = "carregando"
+				}
+			break;
+			
+		case "carregando":
+			segundos_carregar++;
+			var _tempo_carregar = global.segundos * 1
+			if (segundos_carregar >= _tempo_carregar)
+			{
+				if (ataques >= 4)
+				{
+					estado = "fugindo"
+				}
+				else
+				{
+					estado = choose("atirando","atirando2")
+					segundos_carregar = 0
+					ataques++;
+				}
+			}
+			break;
+			
+		case "atirando":
+					
+			atirar()
+			estado = "carregando"
+			break;
+		
+		case "atirando2":
+			atirar2()
+			estado = "carregando"
+			break;
+			
+		case "fugindo":
+			vspeed = -1
+			if (y < -100) instance_destroy(id,0)
+			break;
+	}
+}
 
 
-morte = function()
+#region functions pai
+	morte = function()
 {
 	instance_destroy()	
-	explosao_inimigo(0.5,c_red, ,y)
+	explosao_inimigo(0.8,c_grey, ,y)
 	
 }
-
-colisao = function()
+	
+	colisao = function()
 {
 	morte()
 	obj_player.perde_vida()
 }
- 
-toma_dano = function(_dano)
-{
-	vida -= _dano;
-	if (vida <= 0)
+	 
+	toma_dano = function(_dano)
 	{
-		morte()	
+		boing_in(1.5,0.8)
+		vida -= _dano;
+		if (vida <= 0)
+		{
+			morte()	
+		}
+		else
+		{
+			piscando = true
+			alarm[1] = 5
+		}
 	}
-	else
+		//caso eu tenha sido sequenciado apenas
+		sumir = function()
 	{
-		piscando = true
-		boing_in()
-		alarm[1] = 5
+		if (!global.rand && in_sequence != sequenciado)
+		{
+			instance_destroy(id,0)
+		}
 	}
-}
-
-piscar = function()
-{
-	if (piscando)
-	{
-	gpu_set_blendmode(bm_add)
-	repeat(3)
-	{
-		draw_sprite_ext(sprite_index,image_index,x,y,xscale,yscale,image_angle,image_blend,image_alpha)	
-	}
-	gpu_set_blendmode(bm_normal)
-}	
-}
-
-sumir = function()
-{
-	if (!global.rand && in_sequence != sequenciado)
-	{
-		instance_destroy(id,0)
-	}
-}
-
-drop = function(_drop)
-{
-	instance_create_layer(x,y,"PowerUp",_drop)
-}	
+	
+	
+#endregion

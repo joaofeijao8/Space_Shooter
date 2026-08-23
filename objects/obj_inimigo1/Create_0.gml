@@ -13,7 +13,7 @@ atirar = function()
 	_tiro.vspeed = 3
 }
 
-alarm[0] = global.segundos * random_range(1,2)
+alarm[0] = global.segundos * random_range(1,1.3)
 
 
 morte = function()

@@ -1,22 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_inimigo2",
+  "%Name":"obj_inimigo2_tiro",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_inimigo2",
+  "name":"obj_inimigo2_tiro",
   "overriddenProperties":[],
   "parent":{
     "name":"Inimigo",
     "path":"folders/Objects/Inimigo.yy",
   },
   "parentObjectId":{
-    "name":"obj_inimigo1",
-    "path":"objects/obj_inimigo1/obj_inimigo1.yy",
+    "name":"obj_inimigo1_tiro",
+    "path":"objects/obj_inimigo1_tiro/obj_inimigo1_tiro.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -36,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_inimigo2",
-    "path":"sprites/spr_inimigo2/spr_inimigo2.yy",
+    "name":"spr_inimigo2_tiro",
+    "path":"sprites/spr_inimigo2_tiro/spr_inimigo2_tiro.yy",
   },
   "spriteMaskId":null,
   "visible":true,

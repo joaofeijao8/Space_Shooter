@@ -1,5 +1,5 @@
 global.debug = false
-global.rand = false
+global.rand = true
 global.segundos = game_get_speed(gamespeed_fps)
 global.destino = rm_inicio
 global.transicao = false
