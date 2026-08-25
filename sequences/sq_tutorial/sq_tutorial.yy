@@ -130,7 +130,7 @@
       ],"traits":0,},
     {"$GMTextTrack":"","%Name":"fnt_tutorial","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<AssetTextKeyframe>":"","Keyframes":[
           {"$Keyframe<AssetTextKeyframe>":"","Channels":{
-              "0":{"$AssetTextKeyframe":"v1","Alignment":0,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fnt_tutorial","path":"fonts/fnt_tutorial/fnt_tutorial.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"R: reinicia fase","Wrap":false,},
+              "0":{"$AssetTextKeyframe":"v1","Alignment":0,"EnableEffects":false,"EnableGlow":false,"EnableOutline":false,"EnableShadow":false,"Id":{"name":"fnt_tutorial","path":"fonts/fnt_tutorial/fnt_tutorial.yy",},"resourceType":"AssetTextKeyframe","resourceVersion":"2.0","Text":"R - ENTER: reinicia fase","Wrap":false,},
             },"Disabled":false,"id":"1da7bfa0-9911-4852-8754-b119ea26f129","IsCreationKey":false,"Key":0.0,"Length":60.0,"resourceType":"Keyframe<AssetTextKeyframe>","resourceVersion":"2.0","Stretch":false,},
         ],"resourceType":"KeyframeStore<AssetTextKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"fnt_tutorial","resourceType":"GMTextTrack","resourceVersion":"2.0","trackColour":4282928114,"tracks":[
         {"$GMRealTrack":"","%Name":"origin","builtinName":16,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":true,"keyframes":{"$KeyframeStore<RealKeyframe>":"","Keyframes":[

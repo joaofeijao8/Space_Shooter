@@ -6,6 +6,7 @@ global.transicao = false
 global.fases_desbloqueadas = 0
 global.dificuldade = 0
 global.boss = 0 //se esta na luta do boss
+global.spawn = true
 
 #region funçoes
 
@@ -97,10 +98,21 @@ function som (_som,_loop = 0,_pitch = 0,_pararSomIgual = 0,_qntPitch = 0.2,_volu
 	audio_play_sound(_som,0,_loop,_volume , ,_pit)	
 }
 
-function troca_mapa(_destino,_xtrans = 0 ,_ytrans = 0)
+function troca_mapa(_destino = rm_inicio,_xtrans = 0 ,_ytrans = 0)
 {
-	global.destino = _destino
-	layer_sequence_create("transicao",_xtrans,_ytrans,sq_trasicao1)
+	if(!global.transicao)
+	{
+		global.destino = _destino
+		layer_sequence_create("transicao",_xtrans,_ytrans,sq_trasicao1)
+	}
+}
+
+function troca_mapa_ctz(_destino = rm_inicio,_xtrans = 144 ,_ytrans = 137)
+{
+	
+		global.destino = _destino
+		layer_sequence_create("transicao",_xtrans,_ytrans,sq_trasicao1)
+	
 }
 
 function muda_mapa()
@@ -117,6 +129,25 @@ function transOn()
 function transOff()
 {
 	global.transicao = false	
+}
+
+function spawn3()
+{
+	if(global.spawn)
+	{
+		instance_create_layer(room_width/2,-100,"inimigo",obj_inimigo2)
+		global.spawn = false
+	}
+}
+
+function spawn4()
+{
+	if(global.spawn)
+	{
+		instance_create_layer(64,-100,"inimigo",obj_inimigo2)
+		instance_create_layer(224,-100,"inimigo",obj_inimigo2)
+		global.spawn = false
+	}
 }
 
 

@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_boss1",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":1,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_boss1",
   "overriddenProperties":[],
@@ -9,7 +12,10 @@
     "name":"Bosses",
     "path":"folders/Objects/Inimigo/Bosses.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_inimigo2",
+    "path":"objects/obj_inimigo2/obj_inimigo2.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

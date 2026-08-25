@@ -3,7 +3,7 @@
 sequenciado = in_sequence
 piscando = false
 pisca = noone
-vida = 3
+vida = 5
 xscale = 1
 yscale = 1
 

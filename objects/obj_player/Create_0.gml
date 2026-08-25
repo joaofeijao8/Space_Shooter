@@ -57,18 +57,18 @@ controla_player = function()
 	global.debug = !global.debug
 }
 	//diminuir lv da arma: 1 
-	if (keyboard_check_pressed(ord("1")))
-{
-	lv_tiro--;
-	lv_tiro = clamp(lv_tiro,1,5)
+//	if (keyboard_check_pressed(ord("1")))
+//{
+//	lv_tiro--;
+//	lv_tiro = clamp(lv_tiro,1,5)
 	
-}
+//}
 	//aumentar lv da arma: 2 
-	if (keyboard_check_pressed(ord("2"))) 
-{
-	lv_tiro++;
-	lv_tiro = clamp(lv_tiro,1,5)
-}
+//	if (keyboard_check_pressed(ord("2"))) 
+//{
+//	lv_tiro++;
+//	lv_tiro = clamp(lv_tiro,1,5)
+//}
 	//levar dano: enter
 	//if (keyboard_check_pressed(vk_enter))
 	//{

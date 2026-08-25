@@ -64,7 +64,7 @@ maquina_de_estados = function()
 			var _tempo_carregar = global.segundos * 1
 			if (segundos_carregar >= _tempo_carregar)
 			{
-				if (ataques >= 10)
+				if (ataques >= 4)
 				{
 					estado = "fugindo"
 				}

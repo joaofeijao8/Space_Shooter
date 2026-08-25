@@ -4,9 +4,10 @@
 sq_atual = noone //qual sequencia spawnar
 numero_onda = 0 //posição da onda atual
 next = true //posso passar pra proxima onda?
-ondas_fase1 = [sq_onda1,sq_onda1b,sq_onda2]
-ondas_fase2 = [sq_onda1,sq_onda1b,sq_onda2]
-ondas_fase3 = [sq_onda1,sq_onda1b,sq_onda2]
+ondas_fase1 = [sq_onda1,sq_onda2,sq_onda3,sq_onda4]
+ondas_fase1 = [sq_onda1]
+ondas_fase2 = [sq_onda1,sq_onda2,sq_onda3]
+ondas_fase3 = [sq_onda1,sq_onda2,sq_onda3]
 fase_atual = noone
 
 //definindo minhas fases dependendo da dificuldade atual
