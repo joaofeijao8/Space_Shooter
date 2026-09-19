@@ -84,6 +84,7 @@
     {"id":{"name":"obj_tween","path":"objects/obj_tween/obj_tween.yy",},},
     {"id":{"name":"rm_inicio","path":"rooms/rm_inicio/rm_inicio.yy",},},
     {"id":{"name":"rm_jogo","path":"rooms/rm_jogo/rm_jogo.yy",},},
+    {"id":{"name":"rm_teste","path":"rooms/rm_teste/rm_teste.yy",},},
     {"id":{"name":"rm_tutoriala","path":"rooms/rm_tutoriala/rm_tutoriala.yy",},},
     {"id":{"name":"scr_jogo","path":"scripts/scr_jogo/scr_jogo.yy",},},
     {"id":{"name":"scr_tween","path":"scripts/scr_tween/scr_tween.yy",},},
@@ -141,6 +142,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rm_teste","path":"rooms/rm_teste/rm_teste.yy",},},
     {"roomId":{"name":"rm_inicio","path":"rooms/rm_inicio/rm_inicio.yy",},},
     {"roomId":{"name":"rm_tutoriala","path":"rooms/rm_tutoriala/rm_tutoriala.yy",},},
     {"roomId":{"name":"rm_jogo","path":"rooms/rm_jogo/rm_jogo.yy",},},

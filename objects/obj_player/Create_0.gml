@@ -114,10 +114,11 @@ controla_player = function()
 //metodo do tiro 1
 tiro_1 = function(cor) 
 {
-	
+    //var _dif = 9
+	//var _xdif = random_range(-_dif,_dif)
 	var _tiro = instance_create_layer(x,y,"tiro_player",obj_tiro)
 		
-		_tiro.vspeed =-6
+		
 		_tiro.sombra = cor
 		som(snd_tiro_player,0,1,1)
 }
@@ -126,11 +127,11 @@ tiro_2 = function(dif,cor)
 {
 	
 	var _tiro = instance_create_layer(x+dif,y,"tiro_player",obj_tiro)
-	_tiro.vspeed =-6
+	
 	_tiro.sombra = cor
 		
 	_tiro = instance_create_layer(x-dif,y,"tiro_player",obj_tiro)
-	_tiro.vspeed =-6
+	
 	_tiro.sombra = cor
 	som(snd_tiro_player2,0,1,1)
 }
@@ -148,7 +149,7 @@ tiro_4 = function(cor)
 	var _tiro = instance_create_layer(x,y,"tiro_player",obj_tiro)
 	_tiro.image_xscale = 2
 	_tiro.image_yscale = 2
-	_tiro.vspeed = -4
+	_tiro.velmax = 5
 	_tiro.sombra = cor
 	_tiro.dano = 5
 	som(snd_tiro_player3,0,1,1)

@@ -7,6 +7,9 @@ segundos_carregar = 0;
 estado = "chegando"
 vida = 35
 ataques = 0
+velv = 0
+velh = 0
+limite_atks = 10
 
 atirar = function()
 {
@@ -17,10 +20,12 @@ atirar = function()
 		var _direcao = point_direction(x,y,_p.x,_p.y)
 		
 		var _tiro = instance_create_layer(x,y,"tiro_inimigo",obj_inimigo2_tiro)
+		_tiro.vel = 2
+        var _vel = _tiro.vel
+        _tiro.velh = lengthdir_x(_vel,_direcao)
+        _tiro.velv = lengthdir_y(_vel,_direcao)
+        _tiro.image_angle = _direcao + 90;
 		
-		_tiro.speed = 2 
-		_tiro.direction = _direcao
-		_tiro.image_angle = _direcao + 90
 	}
 }	
 
@@ -29,14 +34,24 @@ atirar2 = function()
 	if(instance_exists(obj_player))
 	{
 		
-		var _ang = -20
+		var _angDif = 20
+        var _ang = -_angDif
 		repeat(3)
 		{
 			var _tiro = instance_create_layer(x,y,"tiro_inimigo",obj_inimigo2_tiro2)
-			_tiro.vspeed = 5
+			
 			_tiro.direction = 270 + _ang
-			_tiro.image_angle =  _tiro.direction + 90
-			_ang += 20
+            _ang += _angDif
+            
+            var _vel = _tiro.vel
+            var _dir = _tiro.direction
+            
+            
+            _tiro.velh = lengthdir_x(_vel,_dir)
+            _tiro.velv = lengthdir_y(_vel,_dir)
+            _tiro.image_angle = _tiro.direction + 90;
+			
+			
 		}
 	}
 }
@@ -50,11 +65,11 @@ maquina_de_estados = function()
 		case "chegando":
 				if (y < 160)
 				{
-					vspeed = 2
+					velv = 2;
 				}
 				else
 				{
-					vspeed = 0
+					velv = 0;
 					estado = "carregando"
 				}
 			break;
@@ -64,9 +79,12 @@ maquina_de_estados = function()
 			var _tempo_carregar = global.segundos * 1
 			if (segundos_carregar >= _tempo_carregar)
 			{
-				if (ataques >= 10)
+				if (ataques >= limite_atks)
 				{
 					estado = "fugindo"
+                    var _dir = random(180);
+                    velh = lengthdir_x(1,_dir)
+                    velv = lengthdir_y(1,_dir)
 				}
 				else
 				{
@@ -89,8 +107,8 @@ maquina_de_estados = function()
 			break;
 			
 		case "fugindo":
-			vspeed = -1
-			if (y < -100) instance_destroy(id,0)
+			
+			if (y < -100 || x < -100 || x > room_width+100) instance_destroy(id,0)
 			break;
 	}
 }

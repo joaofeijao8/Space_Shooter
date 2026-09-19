@@ -18,6 +18,9 @@ switch(room)
 		msc_atual = snd_musica_tutorial
 	break;
 	
+	default:
+		msc_atual = choose(snd_musica_luta,snd_musica_menu,snd_musica_tutorial)
+	break;
 }
 
 msc = audio_play_sound(msc_atual,0,1,0.2)

@@ -6,14 +6,16 @@ pisca = noone
 vida = 5
 xscale = 1
 yscale = 1
+cd_tiro = 60
+timer_tiro = 60 * random_range(1,1.3)
 
 atirar = function()
 {
 	var _tiro = instance_create_layer(x,y,"tiro_inimigo",obj_inimigo1_tiro)
-	_tiro.vspeed = 3
+	timer_tiro = cd_tiro * random_range(1,2.5)
 }
 
-alarm[0] = global.segundos * random_range(1,1.3)
+
 
 
 morte = function()

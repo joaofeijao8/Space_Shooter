@@ -5,11 +5,11 @@
     {"$GMAnimCurveChannel":"","%Name":"back","colour":4290799884,"name":"back","points":[
         {"th0":-0.25,"th1":0.24595869,"tv0":0.0,"tv1":1.5510328,"x":0.0,"y":0.0,},
         {"th0":-0.1607408,"th1":0.25,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"flat","colour":4281083598,"name":"flat","points":[
         {"th0":-0.1,"th1":0.1,"tv0":0.0,"tv1":0.0,"x":0.0,"y":1.0,},
         {"th0":-0.1,"th1":0.1,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"elastic","colour":4292545011,"name":"elastic","points":[
         {"th0":-0.25,"th1":0.0,"tv0":0.0,"tv1":-7.287599E-08,"x":0.0,"y":-0.0029074887,},
         {"th0":-0.080000035,"th1":0.07,"tv0":-0.0003815837,"tv1":0.00014710426,"x":0.173,"y":1.274,},
@@ -17,19 +17,19 @@
         {"th0":-0.050000012,"th1":0.032202184,"tv0":0.0,"tv1":0.0,"x":0.55,"y":1.02,},
         {"th0":-0.1,"th1":0.062763095,"tv0":0.0,"tv1":0.0,"x":0.749004,"y":0.9913705,},
         {"th0":-0.10678697,"th1":0.25,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0001762,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"bounce","colour":4279234797,"name":"bounce","points":[
         {"th0":-0.25,"th1":0.12944432,"tv0":0.0,"tv1":-0.0006293021,"x":0.0,"y":0.0,},
         {"th0":-0.07683352,"th1":0.067127556,"tv0":-0.39294833,"tv1":-0.22512865,"x":0.35,"y":1.0,},
         {"th0":-0.07885504,"th1":0.052648365,"tv0":-0.21267605,"tv1":-0.08826238,"x":0.725,"y":0.99730456,},
         {"th0":-0.044018388,"th1":0.02695769,"tv0":-0.094079256,"tv1":-0.026274443,"x":0.9,"y":1.0,},
         {"th0":-0.024268866,"th1":0.25,"tv0":-0.026954234,"tv1":0.0,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"ease","colour":4279015665,"name":"ease","points":[
         {"th0":-0.1,"th1":1.2623863E-09,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.0,},
         {"th0":-0.25365102,"th1":0.16731972,"tv0":-0.28852424,"tv1":0.19049025,"x":0.45419848,"y":0.71145123,},
         {"th0":-0.19878292,"th1":0.1,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"linear","colour":4294967295,"name":"linear","points":[
         {"th0":-0.33333334,"th1":0.33333334,"tv0":-0.33333334,"tv1":0.33333334,"x":0.0,"y":0.0,},
         {"th0":-0.33333334,"th1":0.33333334,"tv0":-0.33333334,"tv1":0.33333334,"x":1.0,"y":1.0,},
@@ -44,7 +44,7 @@
         {"th0":-0.04166667,"th1":0.04166667,"tv0":-0.06046777,"tv1":0.06046777,"x":0.75,"y":0.61731654,},
         {"th0":-0.04166667,"th1":0.04166667,"tv0":-0.06419225,"tv1":0.06419225,"x":0.875,"y":0.8049097,},
         {"th0":-0.04166667,"th1":0.04166667,"tv0":-0.06544985,"tv1":0.06544985,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"sine_out","colour":4294198070,"name":"sine_out","points":[
         {"th0":-0.04166667,"th1":0.04166667,"tv0":-0.06544985,"tv1":0.06544985,"x":0.0,"y":0.0,},
         {"th0":-0.04166667,"th1":0.04166667,"tv0":-0.06419225,"tv1":0.06419225,"x":0.125,"y":0.19509032,},
@@ -66,11 +66,11 @@
         {"th0":-0.04166667,"th1":0.04166667,"tv0":-0.04628003,"tv1":0.04628003,"x":0.75,"y":0.8535534,},
         {"th0":-0.04166667,"th1":0.04166667,"tv0":-0.02504657,"tv1":0.02504657,"x":0.875,"y":0.96193975,},
         {"th0":-0.04166667,"th1":0.04166667,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"quad_in","colour":4290822336,"name":"quad_in","points":[
         {"th0":-0.33333334,"th1":0.33333334,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.0,},
         {"th0":-0.33333334,"th1":0.33333334,"tv0":-0.6666667,"tv1":0.6666667,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"quad_out","colour":4290822336,"name":"quad_out","points":[
         {"th0":-0.33333334,"th1":0.33333334,"tv0":-0.6666667,"tv1":0.6666667,"x":0.0,"y":0.0,},
         {"th0":-0.33333334,"th1":0.33333334,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0,},
@@ -79,11 +79,11 @@
         {"th0":-0.16666667,"th1":0.16666667,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.0,},
         {"th0":-0.16666667,"th1":0.16666667,"tv0":-0.33333334,"tv1":0.33333334,"x":0.5,"y":0.5,},
         {"th0":-0.16666667,"th1":0.16666667,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"cubic_in","colour":4283215696,"name":"cubic_in","points":[
         {"th0":-0.33333334,"th1":0.33333334,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.0,},
         {"th0":-0.33333334,"th1":0.33333334,"tv0":-1.0,"tv1":1.0,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"cubic_out","colour":4283215696,"name":"cubic_out","points":[
         {"th0":-0.33333334,"th1":0.33333334,"tv0":-1.0,"tv1":1.0,"x":0.0,"y":0.0,},
         {"th0":-0.33333334,"th1":0.33333334,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0,},
@@ -92,7 +92,7 @@
         {"th0":-0.16666667,"th1":0.16666667,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.0,},
         {"th0":-0.16666667,"th1":0.16666667,"tv0":-0.5,"tv1":0.5,"x":0.5,"y":0.5,},
         {"th0":-0.16666667,"th1":0.16666667,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"quart_in","colour":4278255615,"name":"quart_in","points":[
         {"th0":-0.04166667,"th1":0.04166667,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.0,},
         {"th0":-0.04166667,"th1":0.04166667,"tv0":-0.00032552,"tv1":0.00032552,"x":0.125,"y":0.00024414,},
@@ -103,7 +103,7 @@
         {"th0":-0.04166667,"th1":0.04166667,"tv0":-0.0703125,"tv1":0.0703125,"x":0.75,"y":0.31640625,},
         {"th0":-0.04166667,"th1":0.04166667,"tv0":-0.11165365,"tv1":0.11165365,"x":0.875,"y":0.58618164,},
         {"th0":-0.04166667,"th1":0.04166667,"tv0":-0.16666667,"tv1":0.16666667,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"quart_out","colour":4278255615,"name":"quart_out","points":[
         {"th0":-0.04166667,"th1":0.04166667,"tv0":-0.16666667,"tv1":0.16666667,"x":0.0,"y":0.0,},
         {"th0":-0.04166667,"th1":0.04166667,"tv0":-0.11165365,"tv1":0.11165365,"x":0.125,"y":0.41381836,},
@@ -133,7 +133,7 @@
         {"th0":-0.02083333,"th1":0.02083333,"tv0":-0.00130208,"tv1":0.00130208,"x":0.875,"y":0.9980469,},
         {"th0":-0.02083333,"th1":0.02083333,"tv0":-0.00016276,"tv1":0.00016276,"x":0.9375,"y":0.9998779,},
         {"th0":-0.02083333,"th1":0.02083333,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"quint_in","colour":4294945024,"name":"quint_in","points":[
         {"th0":-0.04166667,"th1":0.04166667,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.0,},
         {"th0":-0.04166667,"th1":0.04166667,"tv0":-5.086E-05,"tv1":5.086E-05,"x":0.125,"y":3.052E-05,},
@@ -144,7 +144,7 @@
         {"th0":-0.04166667,"th1":0.04166667,"tv0":-0.06591797,"tv1":0.06591797,"x":0.75,"y":0.23730469,},
         {"th0":-0.04166667,"th1":0.04166667,"tv0":-0.12212118,"tv1":0.12212118,"x":0.875,"y":0.51290894,},
         {"th0":-0.04166667,"th1":0.04166667,"tv0":-0.20833333,"tv1":0.20833333,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"quint_out","colour":4294945024,"name":"quint_out","points":[
         {"th0":-0.04166667,"th1":0.04166667,"tv0":-0.20833333,"tv1":0.20833333,"x":0.0,"y":0.0,},
         {"th0":-0.04166667,"th1":0.04166667,"tv0":-0.12212118,"tv1":0.12212118,"x":0.125,"y":0.48709106,},
@@ -174,7 +174,7 @@
         {"th0":-0.02083333,"th1":0.02083333,"tv0":-0.0004069,"tv1":0.0004069,"x":0.875,"y":0.9995117,},
         {"th0":-0.02083333,"th1":0.02083333,"tv0":-2.543E-05,"tv1":2.543E-05,"x":0.9375,"y":0.99998474,},
         {"th0":-0.02083333,"th1":0.02083333,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"expo_in","colour":4283826175,"name":"expo_in","points":[
         {"th0":-0.02083333,"th1":0.02083333,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.0,},
         {"th0":-0.02083333,"th1":0.02083333,"tv0":-0.00021748,"tv1":0.00021748,"x":0.0625,"y":0.00150607,},
@@ -193,7 +193,7 @@
         {"th0":-0.02083333,"th1":0.02083333,"tv0":-0.0607151,"tv1":0.0607151,"x":0.875,"y":0.4204482,},
         {"th0":-0.02083333,"th1":0.02083333,"tv0":-0.09363549,"tv1":0.09363549,"x":0.9375,"y":0.6484198,},
         {"th0":-0.02083333,"th1":0.02083333,"tv0":-0.14440566,"tv1":0.14440566,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"expo_out","colour":4283826175,"name":"expo_out","points":[
         {"th0":-0.02083333,"th1":0.02083333,"tv0":-0.14440566,"tv1":0.14440566,"x":0.0,"y":0.0,},
         {"th0":-0.02083333,"th1":0.02083333,"tv0":-0.09363549,"tv1":0.09363549,"x":0.0625,"y":0.35158023,},
@@ -247,19 +247,19 @@
         {"th0":-0.01041667,"th1":0.01041667,"tv0":-0.0001677,"tv1":0.0001677,"x":0.9375,"y":0.99883866,},
         {"th0":-0.01041667,"th1":0.01041667,"tv0":-0.00010874,"tv1":0.00010874,"x":0.96875,"y":0.99924695,},
         {"th0":-0.01041667,"th1":0.01041667,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"circ_in","colour":4294923605,"name":"circ_in","points":[
         {"th0":-0.17553666,"th1":0.17553666,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.0,},
         {"th0":-0.1520192,"th1":0.1520192,"tv0":-0.08776833,"tv1":0.08776833,"x":0.5,"y":0.1339746,},
         {"th0":-0.08776833,"th1":0.08776833,"tv0":-0.1520192,"tv1":0.1520192,"x":0.8660254,"y":0.5,},
         {"th0":0.0,"th1":0.0,"tv0":-0.17553666,"tv1":0.17553666,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"circ_out","colour":4294923605,"name":"circ_out","points":[
         {"th0":0.0,"th1":0.0,"tv0":-0.17553666,"tv1":0.17553666,"x":0.0,"y":0.0,},
         {"th0":-0.08776833,"th1":0.08776833,"tv0":-0.1520192,"tv1":0.1520192,"x":0.1339746,"y":0.5,},
         {"th0":-0.1520192,"th1":0.1520192,"tv0":-0.08776833,"tv1":0.08776833,"x":0.5,"y":0.8660254,},
         {"th0":-0.17553666,"th1":0.17553666,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"circ_inout","colour":4294923605,"name":"circ_inout","points":[
         {"th0":-0.08776833,"th1":0.08776833,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.0,},
         {"th0":-0.0760096,"th1":0.0760096,"tv0":-0.04388417,"tv1":0.04388417,"x":0.25,"y":0.0669873,},
@@ -268,20 +268,20 @@
         {"th0":-0.04388417,"th1":0.04388417,"tv0":-0.0760096,"tv1":0.0760096,"x":0.5669873,"y":0.75,},
         {"th0":-0.0760096,"th1":0.0760096,"tv0":-0.04388417,"tv1":0.04388417,"x":0.75,"y":0.9330127,},
         {"th0":-0.08776833,"th1":0.08776833,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"back_in","colour":4281896508,"name":"back_in","points":[
         {"th0":-0.33333334,"th1":0.33333334,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.0,},
         {"th0":-0.33333334,"th1":0.33333334,"tv0":-1.5671934,"tv1":1.5671934,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"back_out","colour":4281896508,"name":"back_out","points":[
         {"th0":-0.33333334,"th1":0.33333334,"tv0":-1.5671934,"tv1":1.5671934,"x":0.0,"y":0.0,},
         {"th0":-0.33333334,"th1":0.33333334,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"back_inout","colour":4281896508,"name":"back_inout","points":[
         {"th0":-0.16666667,"th1":0.16666667,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.0,},
         {"th0":-0.16666667,"th1":0.16666667,"tv0":-0.9324849,"tv1":0.9324849,"x":0.5,"y":0.5,},
         {"th0":-0.16666667,"th1":0.16666667,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"elastic_in","colour":4292545011,"name":"elastic_in","points":[
         {"th0":-0.01041667,"th1":0.01041667,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.0,},
         {"th0":-0.01041667,"th1":0.01041667,"tv0":-0.00027375,"tv1":0.00027375,"x":0.03125,"y":0.0001583,},
@@ -316,7 +316,7 @@
         {"th0":-0.01041667,"th1":0.01041667,"tv0":-0.14876033,"tv1":0.14876033,"x":0.9375,"y":0.16782339,},
         {"th0":-0.01041667,"th1":0.01041667,"tv0":-0.15307187,"tv1":0.15307187,"x":0.96875,"y":0.63884395,},
         {"th0":-0.01041667,"th1":0.01041667,"tv0":-0.07220283,"tv1":0.07220283,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"elastic_out","colour":4292545011,"name":"elastic_out","points":[
         {"th0":-0.01041667,"th1":0.01041667,"tv0":-0.07220283,"tv1":0.07220283,"x":0.0,"y":0.0,},
         {"th0":-0.01041667,"th1":0.01041667,"tv0":-0.15307187,"tv1":0.15307187,"x":0.03125,"y":0.36115605,},
@@ -351,7 +351,7 @@
         {"th0":-0.01041667,"th1":0.01041667,"tv0":-0.00030923,"tv1":0.00030923,"x":0.9375,"y":0.99893504,},
         {"th0":-0.01041667,"th1":0.01041667,"tv0":-0.00027375,"tv1":0.00027375,"x":0.96875,"y":0.9998417,},
         {"th0":-0.01041667,"th1":0.01041667,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"elastic_inout","colour":4292545011,"name":"elastic_inout","points":[
         {"th0":-0.00694444,"th1":0.00694444,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.0,},
         {"th0":-0.00694444,"th1":0.00694444,"tv0":-0.000135,"tv1":0.000135,"x":0.02083333,"y":0.00044728,},
@@ -402,21 +402,21 @@
         {"th0":-0.00694444,"th1":0.00694444,"tv0":-0.00012041,"tv1":0.00012041,"x":0.9583333,"y":0.99915344,},
         {"th0":-0.00694444,"th1":0.00694444,"tv0":-0.000135,"tv1":0.000135,"x":0.9791667,"y":0.9995527,},
         {"th0":-0.00694444,"th1":0.00694444,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"bounce_in","colour":4278222848,"name":"bounce_in","points":[
         {"th0":-0.03030303,"th1":0.03030303,"tv0":-0.02083333,"tv1":0.02083333,"x":0.0,"y":0.0,},
         {"th0":-0.03030303,"th1":0.06060606,"tv0":0.02083333,"tv1":0.08333333,"x":0.09090909,"y":0.0,},
         {"th0":-0.06060606,"th1":0.12121212,"tv0":0.08333333,"tv1":0.33333334,"x":0.27272728,"y":0.0,},
         {"th0":-0.12121212,"th1":0.12121212,"tv0":0.33333334,"tv1":0.6666667,"x":0.6363636,"y":0.0,},
         {"th0":-0.12121212,"th1":0.12121212,"tv0":0.0,"tv1":0.0,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"bounce_out","colour":4278222848,"name":"bounce_out","points":[
         {"th0":-0.12121212,"th1":0.12121212,"tv0":0.0,"tv1":0.0,"x":0.0,"y":0.0,},
         {"th0":-0.12121212,"th1":0.12121212,"tv0":-0.6666667,"tv1":-0.33333334,"x":0.36363637,"y":1.0,},
         {"th0":-0.12121212,"th1":0.06060606,"tv0":-0.33333334,"tv1":-0.08333333,"x":0.72727275,"y":1.0,},
         {"th0":-0.06060606,"th1":0.03030303,"tv0":-0.08333333,"tv1":-0.02083333,"x":0.90909094,"y":1.0,},
         {"th0":-0.03030303,"th1":0.03030303,"tv0":-0.02083333,"tv1":0.02083333,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
     {"$GMAnimCurveChannel":"","%Name":"bounce_inout","colour":4278222848,"name":"bounce_inout","points":[
         {"th0":-0.01515152,"th1":0.01515152,"tv0":-0.01041667,"tv1":0.01041667,"x":0.0,"y":0.0,},
         {"th0":-0.01515152,"th1":0.03030303,"tv0":0.01041667,"tv1":0.04166667,"x":0.04545455,"y":0.0,},
@@ -427,7 +427,7 @@
         {"th0":-0.06060606,"th1":0.03030303,"tv0":-0.16666667,"tv1":-0.04166667,"x":0.8636364,"y":1.0,},
         {"th0":-0.03030303,"th1":0.01515152,"tv0":-0.04166667,"tv1":-0.01041667,"x":0.95454544,"y":1.0,},
         {"th0":-0.01515152,"th1":0.01515152,"tv0":-0.01041667,"tv1":0.01041667,"x":1.0,"y":1.0,},
-      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":true,},
+      ],"resourceType":"GMAnimCurveChannel","resourceVersion":"2.0","visible":false,},
   ],
   "function":2,
   "name":"tween_curves",

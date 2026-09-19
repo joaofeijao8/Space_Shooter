@@ -1,5 +1,5 @@
 ///@description
-if(room != rm_tutoriala)
+if(devo_sumir == true)
 	alarm[0] = global.segundos * 7
 image_alpha = 1
 piscando = false
