@@ -96,6 +96,7 @@
     {"id":{"name":"sq_trasicao1","path":"sequences/sq_trasicao1/sq_trasicao1.yy",},},
     {"id":{"name":"sq_trasicao2","path":"sequences/sq_trasicao2/sq_trasicao2.yy",},},
     {"id":{"name":"sq_tutorial","path":"sequences/sq_tutorial/sq_tutorial.yy",},},
+    {"id":{"name":"sq_vitoria_1","path":"sequences/sq_vitoria_1/sq_vitoria_1.yy",},},
     {"id":{"name":"sq_vitoria","path":"sequences/sq_vitoria/sq_vitoria.yy",},},
     {"id":{"name":"sh_branco","path":"shaders/sh_branco/sh_branco.yy",},},
     {"id":{"name":"snd_boom","path":"sounds/snd_boom/snd_boom.yy",},},
