@@ -1,5 +1,5 @@
 ///@description sumir se squenciado
-
+if (global.hitstop) exit;
 //atirar
 if (global.dificuldade > 0) 
 {

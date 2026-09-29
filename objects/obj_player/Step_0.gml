@@ -1,5 +1,7 @@
 ///@description 
 
+if (global.hitstop) exit;
+
 //controle pra se movimentar
 if(!global.transicao)
 {

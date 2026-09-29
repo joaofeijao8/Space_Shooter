@@ -205,6 +205,7 @@ perde_vida = function()
 	}
 	// se eu ainda tiver vida, tire minha vida e me deixe invencivel
 	else if (vida > 1){
+        ativa_hitstop()
 		boing_in(2.3,0.4)
 		pisca = true
 		alarm[0] = 5
@@ -214,6 +215,7 @@ perde_vida = function()
 	}
 	else
 	{
+        ativa_hitstop(60)
 		instance_destroy()
 		tremer(50)
 	}

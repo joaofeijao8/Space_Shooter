@@ -9,7 +9,7 @@ vida = 35
 ataques = 0
 velv = 0
 velh = 0
-limite_atks = 10
+limite_atks = 1
 
 atirar = function()
 {
